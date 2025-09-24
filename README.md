@@ -10,17 +10,28 @@ Used Python version: Python 3.11.9
 1. Clone repository
 
 2. Setup Python virtual environment (venv):
-    python -m venv venv   
+
+```bash
+python -m venv venv   
+```
 
 3. Activate venv:
-    .\venv\Scripts\activate
+
+```bash
+.\venv\Scripts\activate
+```
 
 4. Install dependences:
-    pip install -r requirements.txt
+
+```bash
+pip install -r requirements.txt
+```
 
 5. Run app:
-    python .\flask\main.py
 
+```bash
+python .\flask\main.py
+```
 
 ## Contacts
 
