@@ -7,6 +7,7 @@ FROM python:alpine
 WORKDIR /app
 COPY --from=builder /install /usr/local
 COPY . .
+RUN apk add --no-cache curl
 HEALTHCHECK --interval=30s \
             --timeout=5s \
             --retries=3 \
