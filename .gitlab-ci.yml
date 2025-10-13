@@ -7,6 +7,12 @@ variables:
 stages:
   - lint
 
+lint_dockerfile:
+  stage: lint
+  image: hadolint/hadolint:latest-debian
+  script:
+    - hadolint Dockerfile
+
 flake8:
   stage: lint
   script:
