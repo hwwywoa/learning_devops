@@ -1,0 +1,10 @@
+image: python:alpine
+
+stages:
+  - lint
+
+flake8:
+  stage: lint
+  script:
+    - pip install flake8
+    - flake8 flask/
